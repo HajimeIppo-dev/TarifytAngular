@@ -1,0 +1,18 @@
+<div class="dropbodycontainer">
+  <div class="dropdownhead">
+    <div class="dropdownlayout">
+      <div class="dropdowntext"> Grammar </div>
+      <a class="dropbtn" (click) = "toggleMenu()"> 
+        <svg id="myDropdownLogo" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <use xlink:href="icon1.svg" /> 
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.4601 7.26816C15.226 7.01399 14.8301 6.99983 14.5768 7.23316L10.001 11.4573L5.42512 7.23316C5.17179 6.99983 4.77595 7.01399 4.54095 7.26816C4.30762 7.52233 4.32345 7.91733 4.57679 8.15149L10.001 13.1582L15.4251 8.15149C15.6785 7.91733 15.6943 7.52233 15.4601 7.26816Z"
+                      fill="black" />
+        </svg>
+      </a>
+    </div>
+    <div id="myDropdown" class="dropdown-content" *ngIf = "isMenuOpened">
+      <a></a>     
+    </div> 
+  </div>
+</div>
