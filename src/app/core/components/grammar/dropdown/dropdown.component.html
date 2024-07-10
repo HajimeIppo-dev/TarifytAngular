@@ -1,7 +1,7 @@
 <div class="dropbodycontainer">
   <div class="dropdownhead">
     <div class="dropdownlayout">
-      <div class="dropdowntext"> Grammar </div>
+      <div class="dropdowntext"> {{currentText}} </div>
       <a class="dropbtn" (click) = "toggleMenu()"> 
         <svg id="myDropdownLogo" width="20" height="20" viewBox="0 0 20 20" fill="none">
           <use xlink:href="icon1.svg" /> 
@@ -12,7 +12,9 @@
       </a>
     </div>
     <div id="myDropdown" class="dropdown-content" *ngIf = "isMenuOpened">
-      <a></a>     
+      <a *ngFor="let route of childRouten" (click)="navigateTo(route.path)">
+        {{ route.path }}
+      </a>  
     </div> 
   </div>
 </div>

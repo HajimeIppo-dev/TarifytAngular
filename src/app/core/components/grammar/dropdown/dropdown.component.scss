@@ -2,9 +2,7 @@
 .dropdownhead {
  
     min-width: 280px;
-    
     height: 60px;
-    position: absolute;
     margin-left: 10%;
     border-radius: 20px;
     border: var(--Dimension-None, 1px) solid var(--UI-Border-Standard, rgba(0, 0, 0, 0.24));
@@ -17,7 +15,7 @@
   .dropbodycontainer {
      
     margin-left:-5%;
-    padding-top: 62px;
+    padding-top: 50px;
     display: flex;
     align-items: center;
     
@@ -65,8 +63,14 @@
   
   }
   
+  .dropdown-content {
+    justify-content: center;
+    align-items: center;
+    
+    
+
+  }
   .dropdown-content a{
-   
     margin-top: 4px;
     display: block;
     margin-bottom: 8px;
@@ -74,7 +78,9 @@
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
-   
+    padding-top: 15px;
+    height: 30px;
+
     border-radius: 20px;
     background: var(--Background-Surface, #FFF);
     box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.4);
@@ -85,9 +91,21 @@
     white-space: nowrap;
     width: auto;
     min-width: 150px;
-    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    color: var(--text-icon-additional, var(--text-icon-black-additional, rgba(0, 0, 0, 0.65)));
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  
+    /* Text Style/UI */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-left: 12px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    padding-left: 16px;
     
   }
   

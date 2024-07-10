@@ -1,0 +1,17 @@
+.grammar-container {
+    display: flex;
+    flex-direction: row; /* Zeilenrichtung für Flexbox */
+    height: 100vh; /* Volle Höhe des Viewports */
+  }
+  
+  .side-menu {
+    width: 280px; /* Breite des Side-Menüs */
+  
+   
+  }
+  
+  .content {
+    flex-grow: 1; /* Nimmt den verbleibenden Platz ein */
+  
+  }
+  
