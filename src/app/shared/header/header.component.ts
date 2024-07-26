@@ -8,5 +8,8 @@ import { RouterLink, RouterLinkActive} from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+  Headertitle : string = "Tarifyt Dictionary"
+  Topic1 : string ="Dictionary"
+  Topic2 : string ="Grammar"
+  Topic3 : string ="Regular Expressions"
 }

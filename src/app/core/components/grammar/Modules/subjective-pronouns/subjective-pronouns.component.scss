@@ -1,0 +1,69 @@
+/* Grundlegende Stile für den Body */
+.tablebody {
+    font-family: 'Arial', sans-serif;
+    margin-right: 12.5%;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 5%;
+  }
+  
+  
+  /* Stil für die Tabelle */
+  .modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Stil für die Tabellenköpfe */
+  .modern-table th {
+    background-color: #09c;
+    color: white;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  /* Stil für die Tabellenzellen */
+  .modern-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Stil für die Tabellenzeilen */
+  .modern-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+
+ 
+  /* Responsive Tabelle */
+  @media (max-width: 600px) {
+    .modern-table thead {
+      display: none;
+    }
+  
+    .modern-table, .modern-table tbody, .modern-table tr, .modern-table td {
+      display: block;
+      width: 100%;
+    }
+  
+    .modern-table tr {
+      margin-bottom: 15px;
+    }
+  
+    .modern-table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    .modern-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  

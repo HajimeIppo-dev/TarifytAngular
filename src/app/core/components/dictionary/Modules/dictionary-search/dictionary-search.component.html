@@ -1,0 +1,12 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="searchcontainer">
+    <form (ngSubmit)="onSubmit()" action="/search">
+      <div class="searchbar-container">
+        <input type="search" [(ngModel)]="searchQuery" name="searchQuery" placeholder="Suchen...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </form>
+  </div>
+  <p-toast></p-toast>
+  <button type="button" pButton pRipple (click)="showError()" label="Error" class="p-button-danger mb-2"></button>

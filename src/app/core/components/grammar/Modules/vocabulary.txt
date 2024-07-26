@@ -1,0 +1,8 @@
+"name": "Prepositions",
+        "data": 
+            {"Englisch": "With me", "Tarifyt": "Akidiy"},
+            {"Englisch": "With you", "Tarifyt": "Akidesch"},
+            {"Englisch": "With Him/Her", "Tarifyt": "Akides"},
+            {"Englisch": "With us", "Tarifyt": "Akidnagh"},
+            {"Englisch": "With them", "Tarifyt": "Akidnem"},
+            */

@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './prepositions.component.scss'
 })
 export class PrepositionsComponent {
-
+   word : string = "English"
 }

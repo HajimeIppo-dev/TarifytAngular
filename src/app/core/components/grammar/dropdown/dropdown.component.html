@@ -12,7 +12,7 @@
       </a>
     </div>
     <div id="myDropdown" class="dropdown-content" *ngIf = "isMenuOpened">
-      <a *ngFor="let route of childRouten" (click)="navigateTo(route.path)">
+      <a *ngFor="let route of childRouten" (click)="navigateTo(route.path)" (click) ="setActiveElement(route.path)">
         {{ route.path }}
       </a>  
     </div> 
