@@ -1,29 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, inject, ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { NgToastModule } from 'ng-angular-popup';
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
+import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @Component({
   selector: 'app-root',
   standalone : true,
-  imports : [RouterOutlet,HeaderComponent,ToastModule],
+  imports : [RouterOutlet,HeaderComponent,ToastModule,ButtonModule],
   templateUrl: './app.component.html',
-  providers : [MessageService]
-
+  providers : [MessageService],
+  
  
 })
 export class AppComponent {
 
   constructor(
-    private messageService: MessageService
-  ){}
-  title = 'test';
+    private messageService : MessageService
+  ){
 
-  showError() {
-    console.log("EEROR")
-    this.messageService.add({severity:'error', summary: 'Error', detail: 'Message Content'});
-}
+  }
+  title = 'test';
+ 
+ 
 }

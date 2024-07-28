@@ -11,11 +11,10 @@ import { bootstrapApplication } from "@angular/platform-browser";
 import { RouterModule, Routes } from "@angular/router";
 import { AppRoutingModule } from "./app.routes";
 import { DataService } from "./api/data.service";
-import { MessageService } from "primeng/api";
-import { ToastModule} from "primeng/toast";
-import {ButtonModule} from "primeng/button"
-import { BrowserAnimationsModule, NoopAnimationsModule, provideAnimations } from "@angular/platform-browser/animations";
-import { provideToastr, ToastrModule, ToastrService } from "ngx-toastr";
+import { ToastModule } from 'primeng/toast';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ButtonModule } from 'primeng/button';
+
 @NgModule({
   declarations: [],
   imports: [
@@ -25,14 +24,9 @@ import { provideToastr, ToastrModule, ToastrService } from "ngx-toastr";
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    ToastModule,
-    BrowserAnimationsModule,
-    ButtonModule
-    
-    
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [DataService,MessageService],
+  providers: [DataService],
   bootstrap: []
 })
 export class AppModule { }
