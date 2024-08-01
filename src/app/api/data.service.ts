@@ -8,12 +8,14 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
 
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = 'http://localhost:3000/api';
 
   constructor(private http: HttpClient) { }
 
   getData(query : string): Observable<any> {
     const params = new HttpParams().set('searchinput', query); 
-    return this.http.get<any>(`${this.apiUrl}/test`, { params });
+    
+    const route = this.http.get<any>(`${this.apiUrl}/test`, { params });
+    return route
   }
 }
