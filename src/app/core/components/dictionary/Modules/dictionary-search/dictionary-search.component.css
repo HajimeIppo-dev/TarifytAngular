@@ -49,7 +49,37 @@ form{
 }
 
 .searchbar-container button:hover {
-    background-color: #3e8e41;
+    background-color:  #9c3;
 }
 
 
+.dropdowncontent{
+    display: none;
+    margin-top: 1px;
+    position: absolute;
+    border-radius: 10px;
+    background-color:  #9c3;
+    width: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.25);
+    z-index: 1;
+}
+
+
+.dropdowncontent a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdowncontent a:hover{
+   color: black;
+}
+
+.dropdown {
+    position: relative;
+    padding-top: 5px;
+    display: inline-block;
+  }
+
+.dropdown:hover .dropdowncontent {display: block;}

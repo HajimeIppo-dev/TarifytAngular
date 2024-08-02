@@ -12,10 +12,17 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getData(query : string): Observable<any> {
+  getAll(query : string): Observable<any> {
     const params = new HttpParams().set('searchinput', query); 
     
     const route = this.http.get<any>(`${this.apiUrl}/test`, { params });
+    return route
+  }
+
+  getNouns(query : string): Observable<any> {
+    const params = new HttpParams().set('searchinput', query); 
+    
+    const route = this.http.get<any>(`${this.apiUrl}/Nouns`, { params });
     return route
   }
 }

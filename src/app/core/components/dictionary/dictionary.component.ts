@@ -8,7 +8,7 @@ import { DictionarySearchComponent } from './Modules/dictionary-search/dictionar
   standalone: true,
   imports: [HeaderComponent, RouterOutlet, DictionarySearchComponent],
   templateUrl: './dictionary.component.html',
-  styleUrl: './dictionary.component.scss'
+ 
 })
 export class DictionaryComponent {
 

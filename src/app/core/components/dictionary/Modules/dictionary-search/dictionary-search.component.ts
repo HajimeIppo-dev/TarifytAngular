@@ -53,11 +53,12 @@ export class DictionarySearchComponent {
   wordEnglist:any = [];
   wordTarifytlist:any = [];
   
-
+  searchAll: string ="Any"
+  searchNouns : string ="Nouns"
+  searchVerbs : string ="Verbs"
 
   onSubmit() {
-    console.log("Submit button clicked!"); 
-    this.dataService.getData(this.searchQuery).subscribe(res => {
+    this.dataService.getAll(this.searchQuery).subscribe(res => {
       this.query = res
       if(res.length ==  0){
         console.log(res)
@@ -70,6 +71,18 @@ export class DictionarySearchComponent {
 
   }
 
+  doSearchNouns(){
+    this.dataService.getNouns(this.searchQuery).subscribe(res => {
+      this.query = res
+      if(res.length ==  0){
+        console.log(res)
+        this.showError()
+      }
+      else{
+      this.navigateTo(res)
+      }
+    });
+  }
  
   navigateTo(res: any){
     

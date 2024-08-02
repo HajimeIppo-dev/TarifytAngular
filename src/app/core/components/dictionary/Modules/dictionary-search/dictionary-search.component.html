@@ -1,11 +1,18 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class="searchcontainer">
+<div class="flex justify-center align-middle searchcontainer">
   <p-toast></p-toast>
-    <form (ngSubmit)="onSubmit()" action="/search">
+    <form  action="/search">
       <div class="searchbar-container">
         <input type="search" [(ngModel)]="searchQuery" name="searchQuery" placeholder="Suchen...">
+        <div class="dropdown">
         <button type="submit"><i class="fa fa-search"></i></button>
+          <div class="dropdowncontent">
+            <a (click)="onSubmit()">{{searchAll}}</a>
+            <a (click)="doSearchNouns()">{{searchNouns}}</a>
+            <a>{{searchVerbs}}</a>
+          </div>
+      </div>
       </div>
     </form>
   </div>
